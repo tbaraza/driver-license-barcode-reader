@@ -65,7 +65,7 @@ class Home extends Component {
 
     }, function (err) {
       if (err) {
-        console.log(err);
+        alert(err);
         return
       }
 
@@ -138,7 +138,7 @@ class Home extends Component {
 
 
     Quagga.onDetected(function (result) {
-      console.log("Barcode detected and processed : [" + result.codeResult.code + "]", result);
+      alert("Barcode detected and processed : [" + result.codeResult.code + "]", result);
     });
   }
 
